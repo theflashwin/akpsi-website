@@ -1,7 +1,46 @@
 {
     "Fall 2023": {
         "Ashwin Mudaliar": {
-            
+            "Major": "Computer Science and Mathematics",
+            "Image": "IMG_0699.jpg"
+        },
+        "Vignesh Brugupalli": {
+            "Major": "Industrial Engineering",
+            "Image": "IMG_0699.jpg"
+        },
+        "Rohan Pai": {
+            "Major": "Computer Science",
+            "Image": "IMG_0699.jpg"
+        },
+        "Gianna Athavale": {
+            "Major": "Biomedical Engineering",
+            "Image": "IMG_0699.jpg"
+        },
+        "Neeti Jain": {
+            "Major": "Computer Science",
+            "Image": "IMG_0699.jpg"
+        }
+    },
+    "Spring 2024": {
+        "Arya Bhanushali": {
+            "Major": "Computer Science",
+            "Image": "IMG_0699.jpg"
+        },
+        "Anaya Rege": {
+            "Major":"Industrial Engineering",
+            "Image": "IMG_0699.jpg"
+        },
+        "Aarav Sharma": {
+            "Major": "Computer Science",
+            "Image": "IMG_0699.jpg"
+        },
+        "Suhith Kaneganti": {
+            "Major": "Business Administration",
+            "Image": "IMG_0699.jpg"
+        },
+        "Arjun Janikiraman": {
+            "Major": "Computer Science",
+            "Image": "IMG_0699.jpg"
         }
     }
 }

@@ -135,7 +135,7 @@ export default function ImageTrack() {
 
     return (
 
-        <div className="mt-56 w-full h-full relative">
+        <div className="mt-56 w-full h-full relative ">
             <div ref={trackRef} id="image-track" data-mouse-down-at="0" data-prev-percentage="0" data-mouse-down="0" data-previous="0">
                 <img class="image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
                 <img class="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />

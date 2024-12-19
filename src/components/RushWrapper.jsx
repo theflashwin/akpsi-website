@@ -15,7 +15,7 @@ export default function RushWrapper() {
             <FAQ/>
             <div className="h-10" />
             <div className="bg-blue w-full text-white justify-center flex flex-row text-2xl">
-                <FaAnglesLeft size={42} />  <h1 className="ml-4 mr-4 mt-1.5">Scroll Horizontally to explore</h1>
+                <FaAnglesLeft size={42} />  <h1 className="ml-4 mr-4 mt-1.5">Drag Horizontally to explore</h1>
                 <FaAnglesRight size={42} />
             </div>
             <div className="h-20" />

@@ -1,6 +1,11 @@
 import React from "react";
+import BrotherCard from "../BrotherCard";
+
+import brothers from '../../assets/brothers.json'
 
 export default function PledgeClass(props) {
+
+    const members = brothers["Fall 2023"]
 
     return (
         <div className="w-full">
@@ -21,7 +26,14 @@ export default function PledgeClass(props) {
                 </div>
             </div>
 
-            
+            {/* Brother Cards */}
+            <div className="m-5 grid grid-cols-5 gap-6 items-center justify-center">
+
+            {Object.entries(members).map(([name, details]) => (
+                <BrotherCard name={name} major={details.Major} image={details.Image} />
+            ))}
+
+            </div>
 
         </div>
     )

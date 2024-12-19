@@ -16,7 +16,7 @@ export default function BrotherWrapper() {
             </div>
 
             {Object.entries(classes).map(([title, image], index) => (
-                <PledgeClass key={index} className="w-full" title={title} image={image} />
+                <PledgeClass key={index} className="w-full" title={title || "Spring 2024"} image={image} />
             ))}
 
         </div>

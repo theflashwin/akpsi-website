@@ -20,6 +20,9 @@ const defaultOptions = {
 }
 
 export default function Hero() {
+
+    const firstImageSrc = images[0];
+
     return (
 
         <div className="-ml-2 md:ml-7 lg:w-full xl:w-full w-[90%] h-auto bg-white">
@@ -45,7 +48,7 @@ export default function Hero() {
 
                 {/* Pictures */}
                 <div className="w-full h-full flex items-center justify-center mt-8">
-                    <img id="first_img" class="h-[32rem] w-auto rounded-lg border-gold border-4" alt="image description" />
+                    <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src={firstImageSrc} alt="image description" />
                 </div>
 
             </div>
@@ -55,5 +58,3 @@ export default function Hero() {
     )
 
 }
-
-first_img.src = images[0];

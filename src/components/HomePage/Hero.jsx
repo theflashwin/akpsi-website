@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from 'react-vanilla-tilt'
 import { TypeAnimation } from 'react-type-animation';
-import Button from "./Button";
+import Button from "../Button";
 
 const images = [
     "home_page_hero.jpeg"

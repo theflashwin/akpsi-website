@@ -1,13 +1,13 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 
-import RushHero from "./RushPage/RushHero";
-import FAQ from "./RushPage/FAQ";
-import ImageTrack from "./ImageTrack";
+import RushHero from "../RushPage/RushHero";
+import FAQ from "../RushPage/FAQ";
+import ImageTrack from "../ImageTrack";
 import { FaAnglesLeft, FaAnglesRight } from "react-icons/fa6";
-import RushVideo from "./RushPage/RushVideo";
-import RushTimeline from "./RushPage/RushTimeline";
-import VerticalRushTimeline from "./RushPage/VerticalRushTimeline";
+import RushVideo from "../RushPage/RushVideo";
+import RushTimeline from "../RushPage/RushTimeline";
+import VerticalRushTimeline from "../RushPage/VerticalRushTimeline";
 
 export default function RushWrapper() {
 

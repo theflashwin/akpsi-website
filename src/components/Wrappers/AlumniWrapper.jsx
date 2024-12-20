@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import alumni from '../assets/alumni.json'
-import GlobeExample from "./AlumniPage/Globe";
-import AlumniCard from "./AlumniPage/AlumniCard";
-import CompanyPlacements from "./AlumniPage/CompanyPlacements";
-import AlumniNewsletters from "./AlumniPage/AlumniNewsletters";
+import alumni from '../../assets/alumni.json'
+import GlobeExample from "../AlumniPage/Globe";
+import AlumniCard from "../AlumniPage/AlumniCard";
+import CompanyPlacements from "../AlumniPage/CompanyPlacements";
+import AlumniNewsletters from "../AlumniPage/AlumniNewsletters";
 
 export default function AlumniWrapper() {
 

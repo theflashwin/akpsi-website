@@ -5,10 +5,9 @@ import { useMediaQuery } from "react-responsive";
 import { FaAnglesRight, FaCalendarDay, FaGraduationCap, FaInstagram, FaLink, FaLinkedin, FaTiktok } from "react-icons/fa6";
 import { MdAccountCircle, MdEmail } from "react-icons/md";
 
-import HomeWrapper from "../components/HomeWrapper";
 import { PiHandshakeBold } from "react-icons/pi";
 import { IoPeopleSharp } from "react-icons/io5";
-import BrotherWrapper from "../components/BrotherWrapper";
+import BrotherWrapper from "../components/Wrappers/BrotherWrapper";
 
 export default function Brothers() {
 

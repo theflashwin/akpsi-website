@@ -4,11 +4,8 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import Brothers from './pages/Brothers'
-import Gallery from './pages/Gallery'
 import Rush from './pages/Rush'
 import Alumni from './pages/Alumni'
-
-import Navbar from './components/Navbar'
 
 function ExternalRedirect({ url }) {
   window.location.href = url;
@@ -30,7 +27,6 @@ function App() {
             <Route path='/' element={<Home />} index />
             <Route path='/brothers' element={<Brothers />} />
             <Route path='/rush' element={<Rush />} />
-            <Route path='/gallery' element={<Gallery />} />
             <Route path='/alumni' element={<Alumni />} />
 
             {/* External Routes */}

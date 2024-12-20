@@ -1,5 +1,5 @@
 import React from "react";
-import BrotherCard from "../BrotherCard";
+import BrotherCard from "./BrotherCard";
 
 import brothers from '../../assets/brothers.json'
 

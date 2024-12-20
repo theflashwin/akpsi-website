@@ -1,8 +1,8 @@
 import React from "react";
-import PledgeClass from "./BrotherPage/PledgeClass";
+import PledgeClass from "../BrotherPage/PledgeClass";
 
-import BrotherCard from "./BrotherCard";
-import brothers from '../assets/brothers.json'
+import BrotherCard from "../BrotherPage/BrotherCard";
+import brothers from '../../assets/brothers.json'
 
 export default function BrotherWrapper() {
 

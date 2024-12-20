@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="grid grid-cols-2 gap-6 p-6">
 
                 {/* Title */}
-                <div className="w-full h-full">
+                <div className="w-full h-full mt-8 ml-16">
                     <div className="text-black lg:text-8xl md:text-7xl sm:text-5xl mb-3">
                         Welcome to the home of <span className="text-gold">Georgia Tech</span> <span className="text-blue">AKPsi</span>
                     </div>
@@ -45,12 +45,8 @@ export default function Hero() {
 
 
                 {/* Pictures */}
-                <div className="w-full h-full flex items-center justify-center">
-
-
+                <div className="w-full h-full flex items-center justify-center mt-8">
                     <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/hero.jpg" alt="image description" />
-
-
                 </div>
 
             </div>

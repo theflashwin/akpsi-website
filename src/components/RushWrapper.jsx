@@ -8,6 +8,16 @@ import RushTimeline from "./RushPage/RushTimeline";
 
 export default function RushWrapper() {
 
+    const images = [
+        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+    ]
+
     return (
         <div className="overflow-x-hidden">
             <RushHero/>
@@ -20,7 +30,7 @@ export default function RushWrapper() {
             </div>
             <div className="h-20" />
             {/* to edit images, go to ImageTrack component */}
-            <ImageTrack/> 
+            <ImageTrack images={images} /> 
             <div className="h-80" />
             <RushVideo/>
             <div className="h-20" />

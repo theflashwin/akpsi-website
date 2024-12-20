@@ -10,6 +10,11 @@ import Alumni from './pages/Alumni'
 
 import Navbar from './components/Navbar'
 
+function ExternalRedirect({ url }) {
+  window.location.href = url;
+  return null;
+}
+
 function App() {
 
   return (
@@ -27,6 +32,13 @@ function App() {
             <Route path='/rush' element={<Rush />} />
             <Route path='/gallery' element={<Gallery />} />
             <Route path='/alumni' element={<Alumni />} />
+
+            {/* External Routes */}
+            <Route path='/instagram' element={<ExternalRedirect url={"https://www.instagram.com/gtakpsi/?hl=en"} />} />
+            <Route path='/linkedin' element={<ExternalRedirect url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} />} />
+            <Route path='/tiktok' element={<ExternalRedirect url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} />} />
+            <Route path='/email' element={<ExternalRedirect url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} />} />
+            <Route path='/calendar' element={<ExternalRedirect url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} />} />
 
           </Routes>
 

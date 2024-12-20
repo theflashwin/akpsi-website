@@ -20,7 +20,7 @@ export default function Alumni() {
 
             <div className="flex">
 
-                <div>
+                <div className="z-20">
 
                     <div className={`fixed top-0 left-0 h-full bg-gold flex flex-col items-center transition-all duration-500 ${toggled ? "w-56" : "w-20"
                         }`}>

@@ -23,7 +23,7 @@ export default function UpcomingEvents() {
     }
 
     return (
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
 
             {/* pictures */}
             <div className="flex justify-center items-center">
@@ -31,7 +31,7 @@ export default function UpcomingEvents() {
             </div>
 
             {/* text */}
-            <div className="justify-center">
+            <div className="ml-12 -mt-96 lg:mt-0 xl:mt-0 lg:ml-0 xl:ml-0 justify-center">
 
                 <div className="text-blue text-6xl mb-12">
                     Upcoming Events

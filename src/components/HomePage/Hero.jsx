@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from 'react-vanilla-tilt'
 import { TypeAnimation } from 'react-type-animation';
-import Button from "./Button";
+import Button from "../Button";
 
 const images = [
     "/pictures/akpsi_drive_pictures/home_page_hero.jpeg"
@@ -22,13 +22,13 @@ const defaultOptions = {
 export default function Hero() {
     return (
 
-        <div className="ml-7 w-full h-auto bg-white">
+        <div className="-ml-2 md:ml-7 lg:w-full xl:w-full w-[90%] h-auto bg-white">
 
-            <div className="grid grid-cols-2 gap-6 p-6">
+            <div className="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2">
 
                 {/* Title */}
-                <div className="w-full h-full mt-8 ml-16">
-                    <div className="text-black lg:text-8xl md:text-7xl sm:text-5xl mb-3">
+                <div className="w-full h-full m-8 text-center lg:text-left">
+                    <div className="text-black text-5xl lg:text-8xl md:text-7xl sm:text-5xl mb-3">
                         Welcome to the home of <span className="text-gold">Georgia Tech</span> <span className="text-blue">AKPsi</span>
                     </div>
                     <div className="text-slate-700 lg:text-2xl mb-3">

@@ -1,8 +1,9 @@
 import React from "react";
-import BrotherCard from "../BrotherCard";
+import BrotherCard from "./BrotherCard";
 
 import brothers from '../../assets/brothers.json'
 
+// DEPRACTED - MOVED TO RUSHTIMELIME
 export default function PledgeClass(props) {
 
     const members = brothers["Fall 2023"]
@@ -27,11 +28,11 @@ export default function PledgeClass(props) {
             </div>
 
             {/* Brother Cards */}
-            <div className="m-5 grid grid-cols-5 gap-6 items-center justify-center">
+            <div className="m-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-6 items-center justify-center">
 
-            {Object.entries(members).map(([name, details]) => (
-                <BrotherCard name={name} major={details.Major} image={details.Image} />
-            ))}
+                {Object.entries(members).map(([name, details]) => (
+                    <BrotherCard name={name} major={details.Major} image={details.Image} />
+                ))}
 
             </div>
 

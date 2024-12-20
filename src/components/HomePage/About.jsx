@@ -12,11 +12,11 @@ export default function About() {
 
     return (
         <div className="w-full h-auto">
-            <div className="text-gold lg:text-6xl md:text-5xl sm:text-4xl mb-6 ml-12">
+            <div className="text-gold text-4xl lg:text-6xl md:text-5xl sm:text-4xl mb-6 ml-12">
                 About Our Fraternity
             </div>
 
-            <div className="px-16 grid grid-cols-2 gap-6">
+            <div className="px-16 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-6">
 
                 {Object.entries(facts).map(([title, description]) => (
                     <Fact title={title} text={description} />

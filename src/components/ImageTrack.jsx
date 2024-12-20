@@ -46,7 +46,7 @@ export default function ImageTrack(props) {
             })
 
             window.addEventListener('touchmove', function (e) {
-                changeTarget();
+                // changeTarget();
 
                 if (track.dataset.mouseDownAt == "0") return;
 
@@ -55,7 +55,8 @@ export default function ImageTrack(props) {
 
                 const percentage = (mouseDelta / maxDelta) * -100,
                     nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-                    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+                    nextPercentage = Math.min(nextPercentageUnconstrained, 0)
+                    // nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
                 track.dataset.percentage = nextPercentage;
 
@@ -69,7 +70,7 @@ export default function ImageTrack(props) {
 
                 for (const image of track.getElementsByClassName("image")) {
                     image.animate({
-                        objectPosition: `${100 + nextPercentage}% center`
+                        objectPosition: `${100 + nextPercentage / 5}% center`
                     }, { duration: 1200, fill: "forwards" });
                 }
             })
@@ -102,7 +103,8 @@ export default function ImageTrack(props) {
 
                 const percentage = (mouseDelta / maxDelta) * -100,
                     nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-                    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -300);
+                    nextPercentage = Math.min(nextPercentageUnconstrained, 0)
+                    // nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -300);
 
                 track.dataset.percentage = nextPercentage;
 

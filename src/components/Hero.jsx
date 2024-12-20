@@ -23,20 +23,20 @@ export default function Hero() {
 
     return (
 
-        <div className="ml-7 w-full h-auto bg-white">
+        <div className="-ml-2 md:ml-7 lg:w-full xl:w-full w-[90%] h-auto bg-white">
 
-            <div className="grid grid-cols-2 gap-6 p-6">
+            <div className="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2">
 
                 {/* Title */}
-                <div className="w-full h-full mt-8 ml-16">
-                    <div className="text-black lg:text-8xl md:text-7xl sm:text-5xl mb-3">
+                <div className="w-full h-full m-8 text-center lg:text-left">
+                    <div className="text-black text-5xl lg:text-8xl md:text-7xl sm:text-5xl mb-3">
                         Welcome to the home of <span className="text-gold">Georgia Tech</span> <span className="text-blue">AKPsi</span>
                     </div>
                     <div className="text-slate-700 lg:text-2xl mb-3">
                         Alpha Kappa Psi is a professional business fraternity for collegiate undergraduates dedicated to fostering leadership and ethical business practices.
                     </div>
 
-                    <div className="flex flex-row gap-3">
+                    <div className="w-full items-center justify-center lg:justify-start flex flex-row gap-3">
                         <Button text="Join Us" type="primary" />
                         <Button text="Learn More" type="secondary" />
                     </div>
@@ -45,7 +45,7 @@ export default function Hero() {
 
 
                 {/* Pictures */}
-                <div className="w-full h-full flex items-center justify-center mt-8">
+                <div className="w-full invisible h-full flex items-center justify-center mt-8 lg:visible md:invisble sm:invisible xs:invisble">
                     <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/hero.jpg" alt="image description" />
                 </div>
 

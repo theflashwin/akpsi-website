@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 import { FaAnglesRight, FaCalendarDay, FaGraduationCap, FaInstagram, FaLink, FaLinkedin, FaTiktok } from "react-icons/fa6";
 import { MdAccountCircle, MdEmail } from "react-icons/md";
@@ -14,6 +15,8 @@ export default function Rush() {
     const [toggled, setToggled] = useState(false)
     const navigate = useNavigate()
 
+    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
     return (
 
         <div className="font-serif w-screen h-screen">
@@ -25,9 +28,9 @@ export default function Rush() {
                     <div className={`fixed top-0 left-0 h-full bg-gold flex flex-col items-center transition-all duration-500 ${toggled ? "w-56" : "w-20"
                         }`}>
                         <FaAnglesRight onClick={() => {
-                            setToggled(!toggled)
+                            setToggled(!toggled && !isMobile)
                         }} size={42} className={`mt-3 cursor-pointer transform transition-transform duration-500 ${toggled ? "rotate-180" : "rotate-0"
-                            }`} />
+                            } ${isMobile ? "invisible" : "visible"}`} />
 
                         <div className="h-36" />
 

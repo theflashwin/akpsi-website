@@ -10,7 +10,7 @@ export default function Fact(props) {
             </div>
 
             {/* text */}
-            <div className="m-5 text-2xl">
+            <div className="m-5 text-md md:text-xl lg:text-2xl xl:text-2xl">
                 {props.text}
             </div>
 

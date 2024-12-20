@@ -13,7 +13,7 @@ export default function HomeWrapper() {
     return (
         <div className="w-full overflow-clip">
             <Hero/>
-            <div className="w-full h-20"/>
+            <div className="w-full -m-80 -mb-96 lg:mb-10 xl:mb-10 lg:m-0 xl:m-0 h-20"/>
             <UpcomingEvents/>
             <div className="w-full h-20"/>
             <About/>

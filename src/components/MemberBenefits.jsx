@@ -30,7 +30,7 @@ export default function MemberBenefits() {
                 Member Benefits
             </div>
 
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
 
             {Object.entries(benefits).map(([key, {title, text}]) => (
                     <div className="mb-40">

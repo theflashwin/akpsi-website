@@ -20,7 +20,7 @@ export default function FAQ() {
                 <h1 className="text-6xl mt-12 mb-12 text-sky-900">Rush FAQ's</h1>
                 <h2 className="text-3xl text-sky-900">{text}</h2>
 
-                <div className="p-6 w-full justify-center grid grid-cols-5 gap-6">
+                <div className="p-6 w-full justify-center grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-5 gap-6">
 
                 {Object.entries(questions).map(([question, answer], index) => (
                     <div key={index} onClick={() => {

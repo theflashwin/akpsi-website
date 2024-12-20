@@ -32,7 +32,7 @@ export default function RushTimeline() {
 
             {/* Event Content */}
             <div className="z-20 bg-amber-100 text-red-900 rounded-lg px-6 py-4 shadow-lg text-center">
-              <h2 className="text-2xl font-bold">{event.title}</h2>
+              <h2 className="text-xl font-bold">{event.title}</h2>
               <p className="text-lg">{event.date}</p>
               <p className="text-lg italic">{event.location}</p>
             </div>

@@ -62,19 +62,19 @@ export default function Home() {
                             <FaInstagram size={42} className="" />
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>Instagram</h1>
                         </div>
-                        <div className="flex flex-row gap-6 mt-3">
+                        <div onClick={() => navigate("/linkedin")} className="flex flex-row gap-6 mt-3">
                             <FaLinkedin size={42} className="" />
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>LinkedIn</h1>
                         </div>
-                        <div className="flex flex-row gap-6 mt-3">
+                        <div onClick={() => navigate("/tiktok")} className="flex flex-row gap-6 mt-3">
                             <FaTiktok size={42} className="" />
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>TikTok</h1>
                         </div>
-                        <div className="flex flex-row gap-6 mt-3">
+                        <div onClick={() => navigate("/email")} className="flex flex-row gap-6 mt-3">
                             <MdEmail size={42} className="" />
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>Email</h1>
                         </div>
-
+                        
                     </div>
 
                 </div>

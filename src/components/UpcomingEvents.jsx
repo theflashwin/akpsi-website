@@ -27,7 +27,7 @@ export default function UpcomingEvents() {
 
             {/* pictures */}
             <div className="flex justify-center items-center">
-                <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/hero.jpg" alt="image description" />
+                <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/rush_pictures/IMG_8052.jpeg" alt="image description" />
             </div>
 
             {/* text */}

@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Button from "./Button";
 
 const images = [
-    "home_page_hero.jpeg"
+    "/pictures/akpsi_drive_pictures/home_page_hero.jpeg"
 ]
 
 const defaultOptions = {
@@ -20,7 +20,6 @@ const defaultOptions = {
 }
 
 export default function Hero() {
-
     return (
 
         <div className="ml-7 w-full h-auto bg-white">
@@ -37,8 +36,8 @@ export default function Hero() {
                     </div>
 
                     <div className="flex flex-row gap-3">
-                        <Button text="Join Us" type="primary" />
-                        <Button text="Learn More" type="secondary" />
+                        <Button text="Join Us" type="primary" route = "/rush" />
+                        <Button text="Learn More" type="secondary" route = "/" />
                     </div>
 
                 </div>
@@ -46,7 +45,7 @@ export default function Hero() {
 
                 {/* Pictures */}
                 <div className="w-full h-full flex items-center justify-center mt-8">
-                    <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/hero.jpg" alt="image description" />
+                    <img id="first_img" class="h-[32rem] w-auto rounded-lg border-gold border-4" alt="image description" />
                 </div>
 
             </div>
@@ -56,3 +55,5 @@ export default function Hero() {
     )
 
 }
+
+first_img.src = images[0];

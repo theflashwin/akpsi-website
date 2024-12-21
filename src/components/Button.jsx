@@ -1,21 +1,23 @@
-import React, {useState} from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
 export default function Button(props) {
+    const text = props.text ? props.text : "Insert Text";
+    const primary = props.type === "primary";
 
-    const text = props.text ? props.text : "Insert Text"
-    const buttonAttributes = " flex items-center justify-center w-36 h-16 rounded-lg border-2"
-    const divName = props.type == "primary" ? buttonAttributes + " bg-gold border-blue hover:bg-white" : buttonAttributes + " bg-white border-gold hover:bg-blue"
-    const headerName = props.type == "primary" ? "text-blue text-2xl" : "text-gold text-2xl"
-    const route = props.route? props.route : ""
-    const navigate = useNavigate();
+    const buttonAttributes = "flex items-center justify-center w-36 h-16 rounded-lg border-2 cursor-pointer";
 
     return (
-        <div onClick ={() => {navigate(route)}} className={divName}>
-            <h1 className={headerName}>
+        <div
+            className={
+                primary
+                    ? `${buttonAttributes} bg-gold border-blue hover:bg-white`
+                    : `${buttonAttributes} bg-white border-gold hover:bg-blue`
+            }
+            onClick={props.onClick} // Attach the onClick handler here
+        >
+            <h1 className={primary ? "text-blue text-2xl" : "text-gold text-2xl"}>
                 {text}
             </h1>
         </div>
-    )
-
+    );
 }

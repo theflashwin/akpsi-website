@@ -1,6 +1,9 @@
 import React from "react";
 
 export default function BrotherCard(props) {
+    
+    console.log(props)
+
     return (
         <div className="w-full h-96 relative overflow-hidden">
             <img

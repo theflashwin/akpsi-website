@@ -7,13 +7,19 @@ import brothers from '../../assets/brothers.json'
 export default function BrotherWrapper() {
 
     const classes = {
-        "Spring  2024": "pcbanner.jpg",
-        "Fall 2023": "pcbanner.jpg"
+        "Fall 2024": "pcbanner.jpg",
+        "Spring 2024": "pcbanner.jpg",
+        "Fall 2023": "pcbanner.jpg",
+        "Spring 2022": "pcbanner.jpg",
+        "Fall 2022": "pcbanner.jpg"
     }
 
     const bindings = [
+        "Fall 2024",
         "Spring 2024",
         "Fall 2023",
+        "Spring 2022", 
+        "Fall 2022",
     ]
 
     return (

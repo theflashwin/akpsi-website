@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Button from "../Button";
 
 const images = [
-    "home_page_hero.jpeg"
+    "/pictures/akpsi_drive_pictures/home_page_hero.jpeg"
 ]
 
 const defaultOptions = {
@@ -21,6 +21,8 @@ const defaultOptions = {
 
 export default function Hero() {
 
+    const firstImageSrc = images[0];
+
     return (
 
         <div className="-ml-2 md:ml-7 lg:w-full xl:w-full w-[90%] h-auto bg-white">
@@ -36,17 +38,17 @@ export default function Hero() {
                         Alpha Kappa Psi is a professional business fraternity for collegiate undergraduates dedicated to fostering leadership and ethical business practices.
                     </div>
 
-                    <div className="w-full items-center justify-center lg:justify-start flex flex-row gap-3">
-                        <Button text="Join Us" type="primary" />
-                        <Button text="Learn More" type="secondary" />
+                    <div className="flex flex-row gap-3">
+                        <Button text="Join Us" type="primary" route = "/rush" />
+                        <Button text="Learn More" type="secondary" route = "/" />
                     </div>
 
                 </div>
 
 
                 {/* Pictures */}
-                <div className="w-full invisible h-full flex items-center justify-center mt-8 lg:visible md:invisble sm:invisible xs:invisble">
-                    <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/hero.jpg" alt="image description" />
+                <div className="w-full h-full flex items-center justify-center mt-8">
+                    <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src={firstImageSrc} alt="image description" />
                 </div>
 
             </div>

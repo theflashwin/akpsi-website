@@ -26,8 +26,8 @@ export default function UpcomingEvents() {
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
 
             {/* pictures */}
-            <div className="invisible flex justify-center items-center lg:visible xl:visible">
-                <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/hero.jpg" alt="image description" />
+            <div className="flex justify-center items-center">
+                <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/rush_pictures/IMG_8052.jpeg" alt="image description" />
             </div>
 
             {/* text */}

@@ -14,7 +14,7 @@ export default function FAQ() {
     }
 
     return (
-        <div className="w-full flex justify-center items-center">
+        <div id="faq-section" className="w-full flex justify-center items-center">
             <div className="w-11/12 bg-gold h-auto rounded-xl text-center">
 
                 <h1 className="text-6xl mt-12 mb-12 text-sky-900">Rush FAQ's</h1>

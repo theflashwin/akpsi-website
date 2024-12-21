@@ -20,16 +20,9 @@ export default function RushHero({ faqRef, timelineRef }) {
                 </div>
 
                 <div className="flex flex-row gap-3 ml-14 mt-6">
-                    <Button
-                        text="FAQs"
-                        type="secondary"
-                        onClick={() => faqRef.current.scrollIntoView({ behavior: "smooth" })}
-                    />
-                    <Button
-                        text="Events"
-                        type="primary"
-                        onClick={() => timelineRef.current.scrollIntoView({ behavior: "smooth" })}
-                    />                </div>
+                    <Button text="FAQs" type="primary" scrollTo="faq-section" />
+                    <Button text="Events" type="secondary" scrollTo="events-section" />
+                </div>
 
             </div>
 

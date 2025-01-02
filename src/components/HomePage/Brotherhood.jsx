@@ -7,7 +7,7 @@ export default function Brotherhood() {
     const benefits = {
         "1": {
             title: "Strong Bonds",
-            text: "Our brotherhood is build on mutual respect, trust, and shared experiences, creating lasting bonds between members."
+            text: "Our brotherhood is built on mutual respect, trust, and shared experiences, creating lasting bonds between members."
         },
         "2": {
             title: "Shared Interests",
@@ -19,28 +19,36 @@ export default function Brotherhood() {
         },
         "4": {
             title: "Big/Little Mentorship",
-            text: "Fostering strong, personal connections through our Big/Little program, where experiences brothers guide, support, and help their Littles grow both personally and professionally."
+            text: "Fostering strong, personal connections through our Big/Little program, where experienced brothers guide, support, and help their Littles grow both personally and professionally."
         }
     }
 
     return (
-        <div className="w-full p-8 h-auto bg-[url('pictures/member-benefits-background.jpg')]">
-            
-            <div className="text-6xl mb-8 text-gold">
-                Our Brotherhood
+        <div className="relative w-full p-8 h-auto bg-[url('pictures/akpsi_drive_pictures/IMG_8161.jpeg')] bg-cover bg-center">
+            {/* Overlay for opacity */}
+            <div className="absolute inset-0 bg-black opacity-75"></div>
+
+            {/* Content */}
+            <div className="relative z-10">
+                <div className="text-6xl mb-8 text-gold">
+                    Our Brotherhood
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+                    {Object.entries(benefits).map(([key, { title, text }]) => (
+                        <div key={key} className="mb-40">
+                            <UpcomingEvent 
+                                number={key} 
+                                title={title} 
+                                text={text} 
+                                box_color="gold" 
+                                title_color="gold" 
+                                text_color="gold" 
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
-
-            {Object.entries(benefits).map(([key, {title, text}]) => (
-                    <div className="mb-40">
-                        <UpcomingEvent number={key} title={title} text={text} box_color="gold" title_color="gold" text_color="gold" />
-                    </div>
-                ))}
-
-            </div>
-
         </div>
     )
-
 }

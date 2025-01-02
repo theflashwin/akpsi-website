@@ -28,7 +28,7 @@ export default function RushHero({ faqRef, timelineRef }) {
 
             {/* picture */}
             <div className="mr-5 invisible lg:visible xl:visible">
-                <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/rushhero.jpg" alt="image description" />
+                <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/rush_pictures/IMG_8151.jpeg" alt="image description" />
             </div>
 
         </div>

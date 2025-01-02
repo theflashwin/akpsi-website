@@ -24,23 +24,31 @@ export default function MemberBenefits() {
     }
 
     return (
-        <div className="w-full p-8 h-auto bg-[url('pictures/member-benefits-background.jpg')]">
-            
-            <div className="text-6xl mb-8 text-gold">
-                Member Benefits
+        <div className="relative w-full p-8 h-auto bg-[url('pictures/akpsi_drive_pictures/IMG_5774.JPG')] bg-cover bg-center">
+            {/* Overlay for opacity */}
+            <div className="absolute inset-0 bg-black opacity-50"></div>
+
+            {/* Content */}
+            <div className="relative z-10">
+                <div className="text-6xl mb-8 text-gold">
+                    Member Benefits
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+                    {Object.entries(benefits).map(([key, { title, text }]) => (
+                        <div key={key} className="mb-40">
+                            <UpcomingEvent 
+                                number={key} 
+                                title={title} 
+                                text={text} 
+                                box_color="gold" 
+                                title_color="gold" 
+                                text_color="gold" 
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
-
-            {Object.entries(benefits).map(([key, {title, text}]) => (
-                    <div className="mb-40">
-                        <UpcomingEvent number={key} title={title} text={text} box_color="gold" title_color="gold" text_color="gold" />
-                    </div>
-                ))}
-
-            </div>
-
         </div>
     )
-
 }

@@ -5,6 +5,8 @@ import { useMediaQuery } from "react-responsive";
 import { FaAnglesRight, FaCalendarDay, FaGraduationCap, FaInstagram, FaLink, FaLinkedin, FaTiktok } from "react-icons/fa6";
 import { MdAccountCircle, MdEmail } from "react-icons/md";
 
+import { ToastContainer, toast } from "react-toastify";
+
 import HomeWrapper from "../components/Wrappers/HomeWrapper";
 import { PiHandshakeBold } from "react-icons/pi";
 import { IoPeopleSharp } from "react-icons/io5";

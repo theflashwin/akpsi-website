@@ -17,13 +17,13 @@ export default function RushWrapper() {
     const timelineRef = useRef(null);
 
     const images = [
-        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
-        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
-        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
-        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
-        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
-        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
-        {image: "https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "/pictures/rush_pictures/IMG_8114.jpeg", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "/pictures/rush_pictures/IMG_8119.jpeg", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "/pictures/rush_pictures/IMG_8124.jpeg", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "/pictures/rush_pictures/IMG_8130.jpeg", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "/pictures/rush_pictures/IMG_8139.jpeg", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "/pictures/rush_pictures/IMG_8145.jpeg", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
+        {image: "/pictures/rush_pictures/IMG_8151.jpeg", link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"},
     ]
 
     return (

@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Brothers from './pages/Brothers'
 import Rush from './pages/Rush'
 import Alumni from './pages/Alumni'
+import CopyToClipboard from './components/CopyToClipboard';
 
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -33,9 +34,8 @@ function App() {
 
             {/* External Routes */}
             <Route path='/instagram' element={<ExternalRedirect url={"https://www.instagram.com/gtakpsi/?hl=en"} />} />
-            <Route path='/linkedin' element={<ExternalRedirect url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} />} />
-            <Route path='/tiktok' element={<ExternalRedirect url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} />} />
-            <Route path='/email' element={<ExternalRedirect url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} />} />
+            <Route path='/linkedin' element={<ExternalRedirect url={"https://www.linkedin.com/company/gtakpsi/posts/?feedView=all"} />} />
+            <Route path='/tiktok' element={<ExternalRedirect url={"https://www.tiktok.com/@gtakpsi?_t=8sNcVMDf0ZT&_r=1"} />} />
             <Route path='/calendar' element={<ExternalRedirect url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"} />} />
 
           </Routes>

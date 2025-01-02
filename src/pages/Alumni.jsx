@@ -8,6 +8,8 @@ import { MdAccountCircle, MdEmail } from "react-icons/md";
 import { PiHandshakeBold } from "react-icons/pi";
 import { IoPeopleSharp } from "react-icons/io5";
 import AlumniWrapper from "../components/Wrappers/AlumniWrapper";
+import CopyToClipboard from "../components/CopyToClipboard";
+
 
 export default function Alumni() {
 
@@ -54,9 +56,9 @@ export default function Alumni() {
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>Calendar</h1>
                         </div>
 
-                        <div className="h-20" />
+                        <div className="h-10" />
                         <div className="w-4/5 h-0.5 bg-black rounded-lg" />
-                        <div className="h-20" />
+                        <div className="h-10" />
 
                         <div onClick={() => navigate("/instagram")} className="flex flex-row gap-6 mt-3">
                             <FaInstagram size={42} className="" />
@@ -70,8 +72,10 @@ export default function Alumni() {
                             <FaTiktok size={42} className="" />
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>TikTok</h1>
                         </div>
-                        <div onClick={() => navigate("/email")} className="flex flex-row gap-6 mt-3">
-                            <MdEmail size={42} className="" />
+                        <div className="flex flex-row gap-6 mt-3 cursor-pointer">
+                            <CopyToClipboard email="malenpatel@gatech.edu">
+                                <MdEmail size={42} className="" />
+                            </CopyToClipboard>
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>Email</h1>
                         </div>
 

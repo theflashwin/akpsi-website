@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "../Button";
 
-export default function RushHero() {
+export default function RushHero({ faqRef, timelineRef }) {
 
     return (
         
@@ -20,8 +20,8 @@ export default function RushHero() {
                 </div>
 
                 <div className="flex flex-row gap-3 ml-14 mt-6">
-                        <Button text="Join Us" type="primary" />
-                        <Button text="Learn More" type="secondary" />
+                    <Button text="FAQs" type="primary" scrollTo="faq-section" />
+                    <Button text="Events" type="secondary" scrollTo="events-section" />
                 </div>
 
             </div>

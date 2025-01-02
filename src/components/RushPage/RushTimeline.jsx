@@ -10,7 +10,7 @@ export default function RushTimeline() {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div id="events-section" className="w-full flex flex-col items-center">
       {/* Title */}
       <h1 className="text-5xl font-bold text-rose-900 mb-12">Rush Timeline</h1>
 

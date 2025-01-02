@@ -24,7 +24,7 @@ export default function Brotherhood() {
     }
 
     return (
-        <div className="relative w-full p-8 h-auto bg-[url('pictures/akpsi_drive_pictures/IMG_8161.jpeg')] bg-cover bg-center">
+        <div className="relative w-full p-8 h-auto bg-[url('/pictures/akpsi_drive_pictures/IMG_8161.jpeg')] bg-cover bg-center">
             {/* Overlay for opacity */}
             <div className="absolute inset-0 bg-black opacity-75"></div>
 

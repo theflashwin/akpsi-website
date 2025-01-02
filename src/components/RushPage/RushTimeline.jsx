@@ -1,13 +1,15 @@
 import React from "react";
+import { time } from "three/tsl";
 
 export default function RushTimeline() {
   const events = [
-    { title: "Interest Night", date: "August 20th", location: "Tech Green @7:30" },
-    { title: "Resume Blitz", date: "August 22nd", location: "IC 106 @7:30", bottom: true },
-    { title: "Rush Night 1", date: "August 28th", location: "IC 203 @7:30" },
-    { title: "Rush Night 2", date: "August 29th", location: "IC 107 @7:30", bottom: true },
-    { title: "Rush Night 3", date: "August 30th", location: "IC 203 @7:30" },
+    { title: "Interest Night", date: "Janurary 22nd", location: "Tech Green", time: "4:00-8:00 PM" },
+    { title: "Resume Blitz", date: "TBA", location: "TBA", bottom: true, time: "TBA" },
+    { title: "Rush Night 1", date: "Jan 26th", location: "IC 211", time: "6:30-8:30 PM" },
+    { title: "Rush Night 2", date: "Jan 27th", location: "IC 111", bottom: true, time: "7:00-9:00 PM" },
+    { title: "Closed Night", date: "Jan 29th", location: "Invite Only", time: "7:00 - 9:00 PM" },
   ];
+
 
   return (
     <div id="events-section" className="w-full flex flex-col items-center">
@@ -24,7 +26,7 @@ export default function RushTimeline() {
           <div
             key={index}
             className={`relative flex flex-col items-center ${
-              event.bottom ? "mt-52" : "-mt-36"
+              event.bottom ? "mt-60" : "-mt-44"
             }`}
           >
             {/* Connecting Line to Card */}
@@ -34,6 +36,7 @@ export default function RushTimeline() {
             <div className="z-20 bg-amber-100 text-red-900 rounded-lg px-6 py-4 shadow-lg text-center">
               <h2 className="text-xl font-bold">{event.title}</h2>
               <p className="text-lg">{event.date}</p>
+              <p className="text-lg">{event.time}</p>
               <p className="text-lg italic">{event.location}</p>
             </div>
 

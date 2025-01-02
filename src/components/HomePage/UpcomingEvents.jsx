@@ -9,16 +9,16 @@ export default function UpcomingEvents() {
             text: "Come and show us your resume and get helpful feedback"
         }, 
         "2": {
-            title: "Night 1 Rush",
-            text: "Join us January Xth for our first night of rush"
+            title: "Interest Night",
+            text: "Join us to learn more about AKPsi on Janurary 22nd"
         },
         "3": {
-            title: "Night 2 Rush",
-            text: "Join us January Yth for our second night of rush"
+            title: "Recruitment Night 1",
+            text: "Join us on Janurary 26th for the first name of rush (6:30 to 8:30)"
         },
         "4": {
-            title: "AKPsi Party",
-            text: "Malen is throwing a rager in Sq5"
+            title: "Recruitment Night 2",
+            text: "Join us on Janurary 27th for the first name of rush (7 to 9)"
         }
     }
 
@@ -26,7 +26,7 @@ export default function UpcomingEvents() {
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
 
             {/* pictures */}
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center invisible lg:visible xl:visible">
                 <img class="h-[32rem] w-auto rounded-lg border-gold border-4" src="/pictures/rush_pictures/IMG_8052.jpeg" alt="image description" />
             </div>
 

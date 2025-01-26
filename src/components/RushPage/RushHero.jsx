@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../Button";
+import { toast } from "react-toastify";
 
 export default function RushHero({ faqRef, timelineRef }) {
 
@@ -20,7 +21,21 @@ export default function RushHero({ faqRef, timelineRef }) {
                 </div>
 
                 <div className="flex flex-row gap-3 ml-14 mt-6">
-                    <Button text="FAQs" type="primary" scrollTo="faq-section" />
+                    <div onClick={() => {
+                        window.location.href = 'https://rush-app-2024.web.app/'
+                        // toast.info('Registration is currently closed, and will open at 01/24/2025', {
+                        //                                 position: "top-center",
+                        //                                 autoClose: 5000,
+                        //                                 hideProgressBar: false,
+                        //                                 closeOnClick: false,
+                        //                                 pauseOnHover: true,
+                        //                                 draggable: true,
+                        //                                 progress: undefined,
+                        //                                 theme: "colored",
+                        //                             });
+                    }}>
+                    <Button text="Register" type="primary" />
+                    </div>
                     <Button text="Events" type="secondary" scrollTo="events-section" />
                 </div>
 

@@ -46,47 +46,19 @@ export default function Home() {
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>Rush Info</h1>
                         </div>
                         <div onClick={() => {
-                            toast.info('Sorry, this link is disabled. Check back later!', {
-                                position: "top-center",
-                                autoClose: 5000,
-                                hideProgressBar: false,
-                                closeOnClick: false,
-                                pauseOnHover: true,
-                                draggable: true,
-                                progress: undefined,
-                                theme: "colored",
-                                });
+                            navigate("/brothers")
                         }} className="flex flex-row gap-6 mt-3">
                             <IoPeopleSharp size={42} className="" />
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>Brothers</h1>
                         </div>
                         <div onClick={() => {
-                            toast.info('Sorry, this link is disabled. Check back later!', {
-                                position: "top-center",
-                                autoClose: 5000,
-                                hideProgressBar: false,
-                                closeOnClick: false,
-                                pauseOnHover: true,
-                                draggable: true,
-                                progress: undefined,
-                                theme: "colored",
-                                });
+                            navigate("/alumni")
                         }} className="flex flex-row gap-6 mt-3">
                             <FaGraduationCap size={42} className="" />
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>Alumni</h1>
                         </div>
                         <div onClick={() => {
-                            toast.info('Sorry, this link is disabled. Check back later!', {
-                                position: "top-center",
-                                autoClose: 5000,
-                                hideProgressBar: false,
-                                closeOnClick: false,
-                                pauseOnHover: true,
-                                draggable: true,
-                                progress: undefined,
-                                theme: "colored",
-                                });
-                                
+                            navigate("/alumni")   
                         }} className="flex flex-row gap-6 mt-3">
                             <FaCalendarDay size={42} className="" />
                             <h1 className={`text-xl mt-1.5 inline-block align-middle ${!toggled ? "hidden" : ""}`}>Calendar</h1>

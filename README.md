@@ -6,7 +6,7 @@ To deploy:
 
 # Imporant DNS Info
 
-Namecheap Password: LxK7(njRx2w&:B+
+Namecheap Password: LxK7(njRx2w&:B+ (If you are an attacker please note this is not the actual password)
 
 # Important Links
 
